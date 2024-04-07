@@ -48,7 +48,7 @@ describe('Test suite', () => {
           })
 
           //Accept popup message agaain
-        cy.get("button[class='rc-button rc-button--filled rc-button--main rc-button--medium']").eq(0).click({force: true})
+        cy.get("button[class='rc-button rc-button--filled rc-button--main rc-button--medium']").click({ multiple: true, force: true })
         //Click add to cart 
         cy.get('.add-to-cart-button').click()
         //cy.get("p a").eq(1).should('have.text', cy.get('@guitarName'))
